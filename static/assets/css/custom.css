@@ -1,0 +1,12 @@
+.paginated{
+    margin-top: 2%;
+}
+.active>.page-link, .page-link.active{
+    z-index: 3;
+    color: #ffff;
+    background-color: #000000 ;
+    border-color: #000000;
+}
+.page-link {
+    color: black;
+}

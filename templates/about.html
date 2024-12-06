@@ -1,0 +1,54 @@
+{% include 'header.html' %}
+<div class="container mt-5">
+    <!-- Page Header -->
+    <h1 class="text-center mb-4">About Us</h1>
+
+    <!-- Intro Section -->
+    <div class="row">
+        <!-- Dataset Description -->
+        <div class="col-md-8">
+            <h2>About the Dataset</h2>
+            <p>This dataset provides a detailed overview of gym members' exercise routines, physical attributes, and fitness metrics. It contains <strong>973 samples</strong> of gym data, including key performance indicators such as heart rate, calories burned, and workout duration.</p>
+            <p>Each entry also includes demographic data and experience levels, allowing for comprehensive analysis of fitness patterns, athlete progression, and health trends.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Age:</strong> Age of the gym member.</li>
+                <li><strong>Gender:</strong> Gender of the gym member (Male or Female).</li>
+                <li><strong>Weight (kg):</strong> Member’s weight in kilograms.</li>
+                <li><strong>Height (m):</strong> Member’s height in meters.</li>
+                <li><strong>Max_BPM:</strong> Maximum heart rate (beats per minute) during workout sessions.</li>
+                <li><strong>Avg_BPM:</strong> Average heart rate during workout sessions.</li>
+                <li><strong>Resting_BPM:</strong> Heart rate at rest before workout.</li>
+                <li><strong>Session_Duration (hours):</strong> Duration of each workout session in hours.</li>
+                <li><strong>Calories_Burned:</strong> Total calories burned during each session.</li>
+                <li><strong>Workout_Type:</strong> Type of workout performed (e.g., Cardio, Strength, Yoga, HIIT).</li>
+                <li><strong>Fat_Percentage:</strong> Body fat percentage of the member.</li>
+                <li><strong>Water_Intake (liters):</strong> Daily water intake during workouts.</li>
+                <li><strong>Workout_Frequency (days/week):</strong> Number of workout sessions per week.</li>
+                <li><strong>Experience_Level:</strong> Level of experience, from beginner (1) to expert (3).</li>
+                <li><strong>BMI:</strong> Body Mass Index, calculated from height and weight.</li>
+            </ul>
+        </div>
+
+        <!-- Right-Hand Side Image -->
+        <div class="col-md-4">
+            <img src="../static/assets/img/dataset-cover.jpg" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <!-- Group Members Section -->
+    <h2 class="mt-4">Our Team</h2>
+    <div class="row">
+        {% for member in members %}
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ member.Name }}</h5>
+                        <p class="card-text"><strong>Id:</strong> {{ member.Id }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% include 'footer.html' %}
