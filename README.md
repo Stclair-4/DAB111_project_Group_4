@@ -30,6 +30,12 @@ API_KEY = "WRITE_YOUR_OWN_API_KEY"
 BASE_URL = "WRITE_YOUR_OWN_BASE_URL"
 ```
 
+For this project just add this to run.
+```python
+API_KEY = "71739f1828mshb0ea83b855341a1p1ad4d3jsnedc6ea1d0a16"
+BASE_URL = "https://exercisedb.p.rapidapi.com"
+```
+
 ### Step 5: Initialize the Database 🗃️
 ```bash
 python init_db.py
