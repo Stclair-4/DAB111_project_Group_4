@@ -6,7 +6,7 @@ Follow the steps below to set up and run the project on your local machine.
 
 ### Step 1: Clone the Repository 📂
 ```bash
-git clone https://github.com/Stclair-4/python_project.git
+git clone https://github.com/Stclair-4/DAB111_project_Group_4.git
 cd python_project
 ```
 
