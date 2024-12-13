@@ -12,11 +12,11 @@ def get_data_from_api(endpoint: str, params: dict = None):
     
     headers = {
         "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
-        "X-RapidAPI-Key": API_KEY,  # Replace with your actual RapidAPI key
+        "X-RapidAPI-Key": API_KEY,  
     }
     try:
         response = requests.get(f"{BASE_URL}{endpoint}", headers=headers, params=params)
-        response.raise_for_status()  # Raise an error for HTTP errors
+        response.raise_for_status() 
         return response.json()
     except requests.RequestException as e:
         print(f"API Request Error: {e}")

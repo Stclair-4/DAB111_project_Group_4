@@ -1,2 +1,41 @@
-# Removing Credentials file that does not required here
+# Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Environment variables
+.env
+*.env
+
+# Flask-related files
+instance/
+config.py
+
+# Credential files
 credentials.py
+
+# Database files
+*.sqlite3
+*.db
+
+# Logs
+logs/
+*.log
+
+# Virtual environment
+venv/
+ENV/
+.env.bak
+.env.local
+
+# Static and media files
+staticfiles/
+media/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
